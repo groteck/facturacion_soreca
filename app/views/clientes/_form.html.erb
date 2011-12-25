@@ -1,0 +1,49 @@
+<%= form_for(@cliente) do |f| %>
+  <% if @cliente.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@cliente.errors.count, "error") %> prohibited this cliente from being saved:</h2>
+
+      <ul>
+      <% @cliente.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nombre_fiscal %><br />
+    <%= f.text_field :nombre_fiscal %>
+  </div>
+  <div class="field">
+    <%= f.label :nombre_comercial %><br />
+    <%= f.text_field :nombre_comercial %>
+  </div>
+  <div class="field">
+    <%= f.label :nif %><br />
+    <%= f.text_field :nif %>
+  </div>
+  <div class="field">
+    <%= f.label :direccion_de_entrega %><br />
+    <%= f.text_field :direccion_de_entrega %>
+  </div>
+  <div class="field">
+    <%= f.label :direccion_fiscal %><br />
+    <%= f.text_field :direccion_fiscal %>
+  </div>
+  <div class="field">
+    <%= f.label :cod_postal %><br />
+    <%= f.number_field :cod_postal %>
+  </div>
+  <div class="field">
+    <%= f.label :provincia %><br />
+    <%= f.text_field :provincia %>
+  </div>
+  <div class="field">
+    <%= f.label :poblacion %><br />
+    <%= f.text_field :poblacion %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

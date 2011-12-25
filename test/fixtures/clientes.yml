@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  nombre_fiscal: MyString
+  nombre_comercial: MyString
+  nif: MyString
+  direccion_de_entrega: MyString
+  direccion_fiscal: MyString
+  cod.postal: 1
+  provincia: MyString
+  poblacion: MyString
+
+two:
+  nombre_fiscal: MyString
+  nombre_comercial: MyString
+  nif: MyString
+  direccion_de_entrega: MyString
+  direccion_fiscal: MyString
+  cod.postal: 1
+  provincia: MyString
+  poblacion: MyString

@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nombre fiscal:</b>
+  <%= @cliente.nombre_fiscal %>
+</p>
+
+<p>
+  <b>Nombre comercial:</b>
+  <%= @cliente.nombre_comercial %>
+</p>
+
+<p>
+  <b>Nif:</b>
+  <%= @cliente.nif %>
+</p>
+
+<p>
+  <b>Direccion de entrega:</b>
+  <%= @cliente.direccion_de_entrega %>
+</p>
+
+<p>
+  <b>Direccion fiscal:</b>
+  <%= @cliente.direccion_fiscal %>
+</p>
+
+<p>
+  <b>Cod postal:</b>
+  <%= @cliente.cod_postal %>
+</p>
+
+<p>
+  <b>Provincia:</b>
+  <%= @cliente.provincia %>
+</p>
+
+<p>
+  <b>Poblacion:</b>
+  <%= @cliente.poblacion %>
+</p>
+
+
+<%= link_to 'Edit', edit_cliente_path(@cliente) %> |
+<%= link_to 'Back', clientes_path %>
